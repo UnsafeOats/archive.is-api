@@ -152,11 +152,11 @@ Referrer Policy: strict-origin-when-cross-origin
 ### questions
 
 1) where does the `?submitid` field in the `/submit` route come from?  is it just random or does it need to be deterministic?
-  - answer found: this is a unique code generated every time someone opens the archive homepage.  if you hit `https://archive.is` with a get request, the html returned will have the following section:
-    ```html
-    <input type="hidden" name="submitid" value="HtIfTUPGq8UZJNXhb+0DdVFW+6OMcgLs2Ma5Ijrb/5BsmspLFezx51rSKUJnnmqg"/>
-    ```
-  - the `submitid` can be extracted from here.
+    a) answer found: this is a unique code generated every time someone opens the archive homepage.  if you hit `https://archive.is` with a get request, the html returned will have the following section:
+      ```html
+      <input type="hidden" name="submitid" value="HtIfTUPGq8UZJNXhb+0DdVFW+6OMcgLs2Ma5Ijrb/5BsmspLFezx51rSKUJnnmqg"/>
+      ```
+    b) the `submitid` can be extracted from here.
 
 ### general workflow for archiving site
 
